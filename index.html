@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+     
+   
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.el1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.el1a h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.el1b ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.el1b ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.el1b ul li a:hover {
+    color: #00aaff;
+}
+
+/* About Section */
+.el2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.el2>img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.el2w>h1 {
+    position: absolute;
+    top:50%;
+    color:burlywood;
+    left: 15%;
+    font-size: 35px;
+    
+}
+
+/* Services Section */
+
+    .el3 {
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.el31a>h5 {
+    color: #007BFF;
+    font-size: 18px;
+}
+
+.el31a>h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.el31a >button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.el31a>button:hover {
+    background-color: #0056b3;
+}
+
+.el31aa, .el31bb {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    
+}
+
+.el3a, .el3b, .el3c, .el3d {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 20%;
+}
+
+.el3a> i, .el3b> i, .el3c> i, .el3d >i {
+    font-size: 40px;
+    color: #007BFF;
+    border: 2px solid black;
+    border-radius:2px ;
+    border-style: double;
+}
+/* Statistics Section */
+.el4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    background-color: #eef;
+    /* gap: 20px; */
+}
+
+.el4 img {
+    max-width: 1600px;
+    height: auto;
+    width: 100%;
+}
+
+.el4a h1 {
+    font-size: 32px;
+    color: #222;
+}
+
+.el4a p {
+    font-size: 16px;
+}
+
+.el4{
+    position: relative;
+   
+    
+}
+
+.el4a>h1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    color: antiquewhite;
+    font-size: 50px;
+}
+.el4a>p{
+    position: absolute;
+    top:60%;
+    left:50%;
+    color: antiquewhite;
+    font-size: 20px;
+
+}
+.el4b>h1{
+    position: absolute;
+    top:50%;
+    left:85%;
+    color: antiquewhite;
+    font-size: 50px;
+}
+.el4b>p{
+    position: absolute;
+    top:60%;
+    left:82%;
+    color: antiquewhite;
+    font-size: 20px;
+
+}
+.el4>img{
+    width: 100vw;
+    
+}
+.el4c>h1{
+    position: absolute;
+    top:50%;
+    left:30%;
+    color: antiquewhite;
+    font-size: 50px;
+}
+.el4c>p{
+    position: absolute;
+    top:60%;
+    left:25%;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.el4d>h1{
+    position: absolute;
+    top:50%;
+    left:10%;
+    color: antiquewhite;
+    font-size: 50px;
+}
+.el4d>p{
+    position: absolute;
+    top:60%;
+    left:5%;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+/* Security Section */
+.el5 {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 18px;
+}
+
+.el5a>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.el5b >h3, .el5b >h5 {
+    margin-bottom: 10px;
+}
+
+/* Ideas Section */
+.el6 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: #f4f4f9;
+}
+
+.el6a>h3,.el6a>p,.el6a>b {
+    display: flex;
+    padding:2%;
+    padding-left: 30%;
+    color:black;
+   
+}
+
+
+.el6b >img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Gallery Section */
+.section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.el7 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.el7 img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.el8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.el8a {
+    flex: 1;
+}
+
+.el8a button {
+    padding: 10px 10px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.el8a button:hover {
+    background-color: #0077cc;
+}
+
+.el8b, .el8c {
+    text-align: left;
+    padding: 10px;
+    background-color: #eef;
+    border-radius: 8px;
+}
+.el8{
+    padding: 5%;
+    display: flex;
+}
+   
+
+
+    .el8b>img,.el8c >img{
+    border-style:ridge;
+    border-radius: 3px;
+    border:1px solid black;
+    padding: 2%;
+       
+        
+    }
+
+    .el8b>b {
+        color: black;
+    }
+/* Footer Section */
+.el10 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color:black;
+    color: #fff;
+}
+
+.el10 >h1, .el10> h3 {
+    color: #00aaff;
+}
+
+.el10 >i {
+    margin: 5px;
+    color: #00aaff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.el11 {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+}
+
+    /* Media Query for Laptops */
+    @media (min-width: 992px) and (max-width: 1220px) {
+    .el1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el1b>ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el2>img {
+        height: 60vh;
+    }
+
+    .el3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el4 >img {
+        height: auto;
+    }
+
+    .el5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el5b {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .el6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el6a {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .el7 >img {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .el8 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el8a {
+        text-align: center;
+    }
+
+    
+
+    .el10 {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .el10 >div {
+        margin: 10px;
+    }
+
+    .el11 {
+        font-size: 14px;
+    }
+}
+
+ /* Media Query for Mobile */
+@media (max-width: 520px) {
+    .el1 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .el1a>h1 {
+        font-size: 20px;
+    }
+
+    .el1b>ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .el2>img {
+        height: 50vh;
+    }
+
+    .el2w>h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .el3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el31a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .el31aa, .el31bb {
+        padding: 10px;
+    }
+
+    .el4 {
+        flex-direction: column;
+    }
+
+    .el4>img {
+        height: auto;
+    }
+
+    .el5 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .el5b {
+        padding: 10px;
+    }
+
+    .el6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el6a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .el7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el7>img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .el8 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el8b, .el8c {
+        height: auto;
+        padding: 20px;
+    }
+
+    
+
+    .el10 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    .el10> div {
+        width: 100%;
+        margin: 0;
+    }
+
+    .el11 {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounceIn {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Header Animation */
+.el1 {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* About Section Animation */
+.el2 img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.el2w h1 {
+    animation: bounceIn 1.5s infinite;
+}
+
+/* Services Section Animation */
+.el3 {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.el3a, .el3b, .el3c, .el3d {
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+/* Statistics Section Animation */
+.el4 img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.el4a h1, .el4a p, .el4b h1, .el4b p, .el4c h1, .el4c p, .el4d h1, .el4d p {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Security Section Animation */
+.el5 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.el5b h3, .el5b p, .el5b h5 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Ideas Section Animation */
+.el6a h3, .el6a p, .el6a b {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.el6b img {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+/* Gallery Section Animation */
+.el7 img {
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.el7 img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonials Section Animation */
+.el8a, .el8b, .el8c {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer Animation */
+.el10, .el11 {
+    animation: fadeIn 1.8s ease-in-out;
+}
+</style>
+<body>
+    
+    <div class="el1">
+        <div class="el1a">
+            <h1>jevelin</h1>
+        </div>
+        <div class="el1b">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="el2" id="About">
+        <img src="tab.png" alt="">
+    </div>
+    <div class="el2w" >
+        <h1>Creative Startup company website to present your amazing ideas</h1>
+    </div>
+    <div class="el3">
+        <div class="el31a" id="Service">
+            <h5>Always at service!</h5><br>
+           <h2> Splendid ideas for starting new business</h2><br>
+           <button>Explore More</button><br>
+        </div>
+<div class="el31aa">
+        <div class="el3a">
+            <div> <i class="fa-brands fa-facebook-messenger"></i></div>
+            <h2>Fast & effective</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="el3b">
+            <div> <i class="fa-solid fa-laptop"></i></div><br>
+            <h2>Marketing strategy</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+</div>
+<div class="el31bb">
+        <div class="el3c">
+            <div> <i class="fa-solid fa-user"></i></div><br>
+            <h2>Consulting</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="el3d">
+            <div> <i class="fa-solid fa-headphones-simple"></i></div><br>
+            <h2>Startup support</h2><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+</div>
+</div>
+    <div class="el4">
+        <img src="tab1.png">
+        <div class="el4a">
+            <h1>32</h1><br><br>
+            <p>Businesses built in just 2 years</p>
+            <div class="el4b">
+                <h1>100+</h1><br><br>
+                <p>Milestones completed</p>
+            </div>
+           <div class="el4c">
+            <h1>5K</h1>
+            <p> Positive reviews from clients</p>
+           </div>
+           <div class="el4d">
+            <h1>65</h1>
+            <p>Best employees in the world</p>
+           </div>
+           </div>
+    </div>
+    <div class="el5">
+        <div class="el5a">
+            <img src="daniel.png" alt="">
+        </div>
+        <div class="el5b">
+            <h3>Highest security in the castle</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris vitae sodales lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc aliquam
+            </p>
+            <h5>Password protection</h5>
+            <h5> 2-step authorization key</h5>
+            <h5>Face recognition</h5>
+        </div>
+    </div>
+    <div class="el6">
+        <div class="el6a">
+            <h3>Worlds most amazing ideas are living here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae sodales lectus, non ultrices nisi
+                in</p><br>
+            <b> Higher demand 80%</b><br>
+            <b> Less expenses 20%</b>
+        </div>
+        <div class="el6b">
+            <img src="daniel1.png">
+        </div>
+    </div>
+    <div class="section" id="Gallery">
+        <h1>Gallary</h1><br>
+        <p>Ut et nisi ac dui pulvinar consequat</p><br><br>
+    </div>
+    <div class="el7" >
+        <img src="image1.png" width="30%" height="80%">
+        <img src="image2.png" width="30%" height="80%">
+        <img src="image3.png" width="30%" height="80%">
+    </div>
+    <div class="el8">
+        <div class="el8a">
+            <b>Top Quality!</b><br><br>
+            <h1>Our customers love what we do </h1><br>
+            <p>Curabitur aliquam, felis ut ultricies porta, <br>ante dolor iaculis ante, ante dolor iaculis anteet
+                fringilla ligula</p><br>
+            <button>Contact Us</button>
+        </div>
+        <div class="parent">
+            <div class="el8b"><br>
+                <img src="aa.png">
+                <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc aliquam ligula, id iaculis
+                    quam dui et metus.</p>
+                <b>Kate Welsh</b>
+            </div><br><br><br><br>
+            <div class="el8c">
+                <img src="p.jpeg">
+                <p>Lectus, non ultrices nisi. In varius, leo non gravida tristique, diam nunc aliquam ligula, id iaculis quam dui et metus.</p>
+                   
+                <b>Jogh Doe</b>
+            </div>
+        </div>
+    </div>
+</body>
+</div>
+    <div class="el10">
+        <div class="el10a">
+            <h1>Jevelin</h1><br>
+           <div> Follow our latest achievements and information on social networks</div>
+           <i class="fa-brands fa-facebook-messenger"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-instagram"></i>
+        </div>
+           <div class="el10b">
+       <h3>Explore</h3>
+<p>Privacy</p>
+<p>About us</p>
+<p>Testimonials</p>
+    </div>
+<div class="el10c">
+<h3>Teamwork</h3>
+<p>Timeline</p>
+<p>News</p>
+<p>Insight</p>
+</div>
+<div class="el10d">
+<h3>Marketing</h3>
+<p>Strategy</p>
+<p>Licensing</p>
+<p>Terms & conditions</p>
+    </div>
+        </div>
+    <div class="el11">
+       Copyright © JevelinTheme - Theme by Shufflehound
+    </div>
+</body>
+</html>
